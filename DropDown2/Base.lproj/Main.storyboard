@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDown2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trippie_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="rBP-La-WLd">
+                                <rect key="frame" x="180" y="28" width="240" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="y0b-o2-XAM"/>
+                                </constraints>
+                            </imageView>
+                            <searchBar multipleTouchEnabled="YES" contentMode="redraw" placeholder="Airport" translatesAutoresizingMaskIntoConstraints="NO" id="S5d-ei-Ak7">
+                                <rect key="frame" x="170" y="215" width="261" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="Rob-gz-n83"/>
+                                    <constraint firstAttribute="height" constant="44" id="pfG-hL-r3Y"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.38178903408397291" green="1" blue="0.91001869349720321" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vZv-9s-UWa"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu2-f3-l3s">
+                                <rect key="frame" x="170" y="390" width="261" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wbw-uf-EcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Geo-Locate My Airport"/>
+                                <connections>
+                                    <action selector="GPSButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUw-cg-fmC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoR-L2-Wyt">
+                                <rect key="frame" x="291" y="361" width="19" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CUm-f4-Rrj"/>
+                                    <constraint firstAttribute="width" constant="19" id="Qb2-oW-Xjj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.39681976010101006" green="0.39681976010101006" blue="0.39681976010101006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Flight Number" translatesAutoresizingMaskIntoConstraints="NO" id="RnD-Aj-s9n">
+                                <rect key="frame" x="170" y="270" width="261" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6WG-GT-ATV"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.33760727825210768" green="1" blue="0.92930516928410678" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXn-1U-fSg">
+                                <rect key="frame" x="170" y="323" width="261" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2VE-ii-M7A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="SearchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHA-ft-glR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3957534064860504" green="1" blue="0.89446006043506676" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hXn-1U-fSg" firstAttribute="top" secondItem="RnD-Aj-s9n" secondAttribute="bottom" constant="9" id="7TM-Ec-8xd"/>
+                            <constraint firstItem="RnD-Aj-s9n" firstAttribute="trailing" secondItem="S5d-ei-Ak7" secondAttribute="trailing" id="H2A-8A-nfU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cu2-f3-l3s" secondAttribute="bottom" constant="180" id="Ix1-BW-lIz"/>
+                            <constraint firstItem="S5d-ei-Ak7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oqu-mH-p9C"/>
+                            <constraint firstItem="hXn-1U-fSg" firstAttribute="centerX" secondItem="PoR-L2-Wyt" secondAttribute="centerX" id="R1C-sI-g9q"/>
+                            <constraint firstItem="RnD-Aj-s9n" firstAttribute="trailing" secondItem="hXn-1U-fSg" secondAttribute="trailing" id="UvB-84-8gO"/>
+                            <constraint firstItem="S5d-ei-Ak7" firstAttribute="top" secondItem="rBP-La-WLd" secondAttribute="bottom" constant="17" id="Xzl-gq-MJj"/>
+                            <constraint firstItem="cu2-f3-l3s" firstAttribute="top" secondItem="PoR-L2-Wyt" secondAttribute="bottom" constant="8" symbolic="YES" id="Zv4-AS-Q4H"/>
+                            <constraint firstItem="S5d-ei-Ak7" firstAttribute="leading" secondItem="RnD-Aj-s9n" secondAttribute="leading" id="dIJ-fa-s32"/>
+                            <constraint firstItem="PoR-L2-Wyt" firstAttribute="top" secondItem="hXn-1U-fSg" secondAttribute="bottom" constant="8" symbolic="YES" id="gb0-Y3-WZA"/>
+                            <constraint firstItem="cu2-f3-l3s" firstAttribute="trailing" secondItem="hXn-1U-fSg" secondAttribute="trailing" id="rED-HT-8o7"/>
+                            <constraint firstItem="RnD-Aj-s9n" firstAttribute="top" secondItem="S5d-ei-Ak7" secondAttribute="bottom" constant="11" id="tvY-jh-Ygg"/>
+                            <constraint firstItem="rBP-La-WLd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="uEX-iw-Bls"/>
+                            <constraint firstItem="RnD-Aj-s9n" firstAttribute="leading" secondItem="hXn-1U-fSg" secondAttribute="leading" id="v7r-dD-y6f"/>
+                            <constraint firstItem="rBP-La-WLd" firstAttribute="centerX" secondItem="S5d-ei-Ak7" secondAttribute="centerX" id="yFb-wD-ixl"/>
+                            <constraint firstItem="hXn-1U-fSg" firstAttribute="leading" secondItem="cu2-f3-l3s" secondAttribute="leading" id="z5g-0i-nkg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FlightNumber" destination="RnD-Aj-s9n" id="Oza-z9-YrK"/>
+                        <outlet property="GPSButton" destination="cu2-f3-l3s" id="Mm4-QY-BWA"/>
+                        <outlet property="SearchButton" destination="hXn-1U-fSg" id="s5A-1i-XZi"/>
+                        <outlet property="searchBar" destination="S5d-ei-Ak7" id="278-yv-sJA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="psn-Z5-gPD"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Trippie_logo_white" width="896" height="896"/>
+    </resources>
+</document>

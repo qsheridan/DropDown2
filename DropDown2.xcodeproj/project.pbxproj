@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED00042D1C10CC4600F547E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED00042C1C10CC4600F547E2 /* CoreLocation.framework */; };
+		EDA72B211C0DF0C0006C695B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72B201C0DF0C0006C695B /* AppDelegate.swift */; };
+		EDA72B231C0DF0C0006C695B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72B221C0DF0C0006C695B /* ViewController.swift */; };
+		EDA72B261C0DF0C0006C695B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA72B241C0DF0C0006C695B /* Main.storyboard */; };
+		EDA72B281C0DF0C0006C695B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA72B271C0DF0C0006C695B /* Assets.xcassets */; };
+		EDA72B2B1C0DF0C0006C695B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA72B291C0DF0C0006C695B /* LaunchScreen.storyboard */; };
+		EDA72B361C0DF0C0006C695B /* DropDown2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72B351C0DF0C0006C695B /* DropDown2Tests.swift */; };
+		EDA72B411C0DF0C0006C695B /* DropDown2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA72B401C0DF0C0006C695B /* DropDown2UITests.swift */; };
+		EDA72B4F1C0DF368006C695B /* MajorAirports.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDA72B4E1C0DF368006C695B /* MajorAirports.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDA72B321C0DF0C0006C695B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA72B151C0DF0C0006C695B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA72B1C1C0DF0C0006C695B;
+			remoteInfo = DropDown2;
+		};
+		EDA72B3D1C0DF0C0006C695B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA72B151C0DF0C0006C695B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA72B1C1C0DF0C0006C695B;
+			remoteInfo = DropDown2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED00042C1C10CC4600F547E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EDA72B1D1C0DF0C0006C695B /* DropDown2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDown2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA72B201C0DF0C0006C695B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDA72B221C0DF0C0006C695B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDA72B251C0DF0C0006C695B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDA72B271C0DF0C0006C695B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDA72B2A1C0DF0C0006C695B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDA72B2C1C0DF0C0006C695B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA72B311C0DF0C0006C695B /* DropDown2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDown2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA72B351C0DF0C0006C695B /* DropDown2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown2Tests.swift; sourceTree = "<group>"; };
+		EDA72B371C0DF0C0006C695B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA72B3C1C0DF0C0006C695B /* DropDown2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDown2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA72B401C0DF0C0006C695B /* DropDown2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown2UITests.swift; sourceTree = "<group>"; };
+		EDA72B421C0DF0C0006C695B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA72B4E1C0DF368006C695B /* MajorAirports.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MajorAirports.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDA72B1A1C0DF0C0006C695B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED00042D1C10CC4600F547E2 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B2E1C0DF0C0006C695B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B391C0DF0C0006C695B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDA72B141C0DF0C0006C695B = {
+			isa = PBXGroup;
+			children = (
+				ED00042C1C10CC4600F547E2 /* CoreLocation.framework */,
+				EDA72B1F1C0DF0C0006C695B /* DropDown2 */,
+				EDA72B341C0DF0C0006C695B /* DropDown2Tests */,
+				EDA72B3F1C0DF0C0006C695B /* DropDown2UITests */,
+				EDA72B1E1C0DF0C0006C695B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDA72B1E1C0DF0C0006C695B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDA72B1D1C0DF0C0006C695B /* DropDown2.app */,
+				EDA72B311C0DF0C0006C695B /* DropDown2Tests.xctest */,
+				EDA72B3C1C0DF0C0006C695B /* DropDown2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDA72B1F1C0DF0C0006C695B /* DropDown2 */ = {
+			isa = PBXGroup;
+			children = (
+				EDA72B201C0DF0C0006C695B /* AppDelegate.swift */,
+				EDA72B221C0DF0C0006C695B /* ViewController.swift */,
+				EDA72B241C0DF0C0006C695B /* Main.storyboard */,
+				EDA72B271C0DF0C0006C695B /* Assets.xcassets */,
+				EDA72B291C0DF0C0006C695B /* LaunchScreen.storyboard */,
+				EDA72B2C1C0DF0C0006C695B /* Info.plist */,
+				EDA72B4E1C0DF368006C695B /* MajorAirports.plist */,
+			);
+			path = DropDown2;
+			sourceTree = "<group>";
+		};
+		EDA72B341C0DF0C0006C695B /* DropDown2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EDA72B351C0DF0C0006C695B /* DropDown2Tests.swift */,
+				EDA72B371C0DF0C0006C695B /* Info.plist */,
+			);
+			path = DropDown2Tests;
+			sourceTree = "<group>";
+		};
+		EDA72B3F1C0DF0C0006C695B /* DropDown2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDA72B401C0DF0C0006C695B /* DropDown2UITests.swift */,
+				EDA72B421C0DF0C0006C695B /* Info.plist */,
+			);
+			path = DropDown2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDA72B1C1C0DF0C0006C695B /* DropDown2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA72B451C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2" */;
+			buildPhases = (
+				EDA72B191C0DF0C0006C695B /* Sources */,
+				EDA72B1A1C0DF0C0006C695B /* Frameworks */,
+				EDA72B1B1C0DF0C0006C695B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDown2;
+			productName = DropDown2;
+			productReference = EDA72B1D1C0DF0C0006C695B /* DropDown2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDA72B301C0DF0C0006C695B /* DropDown2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA72B481C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2Tests" */;
+			buildPhases = (
+				EDA72B2D1C0DF0C0006C695B /* Sources */,
+				EDA72B2E1C0DF0C0006C695B /* Frameworks */,
+				EDA72B2F1C0DF0C0006C695B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA72B331C0DF0C0006C695B /* PBXTargetDependency */,
+			);
+			name = DropDown2Tests;
+			productName = DropDown2Tests;
+			productReference = EDA72B311C0DF0C0006C695B /* DropDown2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDA72B3B1C0DF0C0006C695B /* DropDown2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA72B4B1C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2UITests" */;
+			buildPhases = (
+				EDA72B381C0DF0C0006C695B /* Sources */,
+				EDA72B391C0DF0C0006C695B /* Frameworks */,
+				EDA72B3A1C0DF0C0006C695B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA72B3E1C0DF0C0006C695B /* PBXTargetDependency */,
+			);
+			name = DropDown2UITests;
+			productName = DropDown2UITests;
+			productReference = EDA72B3C1C0DF0C0006C695B /* DropDown2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDA72B151C0DF0C0006C695B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Quinn Sheridan";
+				TargetAttributes = {
+					EDA72B1C1C0DF0C0006C695B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 96JFDGSDPH;
+					};
+					EDA72B301C0DF0C0006C695B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDA72B1C1C0DF0C0006C695B;
+					};
+					EDA72B3B1C0DF0C0006C695B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDA72B1C1C0DF0C0006C695B;
+					};
+				};
+			};
+			buildConfigurationList = EDA72B181C0DF0C0006C695B /* Build configuration list for PBXProject "DropDown2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDA72B141C0DF0C0006C695B;
+			productRefGroup = EDA72B1E1C0DF0C0006C695B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDA72B1C1C0DF0C0006C695B /* DropDown2 */,
+				EDA72B301C0DF0C0006C695B /* DropDown2Tests */,
+				EDA72B3B1C0DF0C0006C695B /* DropDown2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDA72B1B1C0DF0C0006C695B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA72B2B1C0DF0C0006C695B /* LaunchScreen.storyboard in Resources */,
+				EDA72B281C0DF0C0006C695B /* Assets.xcassets in Resources */,
+				EDA72B4F1C0DF368006C695B /* MajorAirports.plist in Resources */,
+				EDA72B261C0DF0C0006C695B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B2F1C0DF0C0006C695B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B3A1C0DF0C0006C695B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDA72B191C0DF0C0006C695B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA72B231C0DF0C0006C695B /* ViewController.swift in Sources */,
+				EDA72B211C0DF0C0006C695B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B2D1C0DF0C0006C695B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA72B361C0DF0C0006C695B /* DropDown2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA72B381C0DF0C0006C695B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA72B411C0DF0C0006C695B /* DropDown2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDA72B331C0DF0C0006C695B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA72B1C1C0DF0C0006C695B /* DropDown2 */;
+			targetProxy = EDA72B321C0DF0C0006C695B /* PBXContainerItemProxy */;
+		};
+		EDA72B3E1C0DF0C0006C695B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA72B1C1C0DF0C0006C695B /* DropDown2 */;
+			targetProxy = EDA72B3D1C0DF0C0006C695B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDA72B241C0DF0C0006C695B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA72B251C0DF0C0006C695B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA72B291C0DF0C0006C695B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA72B2A1C0DF0C0006C695B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDA72B431C0DF0C0006C695B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDA72B441C0DF0C0006C695B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDA72B461C0DF0C0006C695B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DropDown2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDA72B471C0DF0C0006C695B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = DropDown2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDA72B491C0DF0C0006C695B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DropDown2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropDown2.app/DropDown2";
+			};
+			name = Debug;
+		};
+		EDA72B4A1C0DF0C0006C695B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DropDown2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DropDown2.app/DropDown2";
+			};
+			name = Release;
+		};
+		EDA72B4C1C0DF0C0006C695B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DropDown2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DropDown2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDA72B4D1C0DF0C0006C695B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DropDown2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = a.DropDown2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DropDown2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDA72B181C0DF0C0006C695B /* Build configuration list for PBXProject "DropDown2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA72B431C0DF0C0006C695B /* Debug */,
+				EDA72B441C0DF0C0006C695B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA72B451C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA72B461C0DF0C0006C695B /* Debug */,
+				EDA72B471C0DF0C0006C695B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA72B481C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA72B491C0DF0C0006C695B /* Debug */,
+				EDA72B4A1C0DF0C0006C695B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA72B4B1C0DF0C0006C695B /* Build configuration list for PBXNativeTarget "DropDown2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA72B4C1C0DF0C0006C695B /* Debug */,
+				EDA72B4D1C0DF0C0006C695B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDA72B151C0DF0C0006C695B /* Project object */;
+}
